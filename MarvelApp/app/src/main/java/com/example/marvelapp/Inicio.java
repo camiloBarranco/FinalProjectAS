@@ -38,7 +38,7 @@ public class Inicio extends AppCompatActivity {
         frm_Inicio = findViewById(R.id.frm_inicio);
         nav_1 = findViewById(R.id.nav_1);
 
-
+        loadFragment(homeFragment);
 
         nav_1.setOnItemSelectedListener(new BottomNavigationView.OnItemSelectedListener() {
             @Override
