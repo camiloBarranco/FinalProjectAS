@@ -8,7 +8,7 @@
     android:background="@color/background"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DescriptionActivity">
+    tools:context=".HeroDescription">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -52,56 +52,56 @@
                 android:text="Descripcion"
                 android:textColor="@color/black"
                 android:textSize="20sp" />
-        </LinearLayout>
 
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:orientation="horizontal"
-        android:gravity="center_horizontal"
-        android:layout_height="150dp">
-
-        <LinearLayout
-            android:layout_width="150dp"
-            android:layout_height="100dp"
-            android:layout_marginBottom="20dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:background="@color/white"
-            android:orientation="vertical">
-
-
-            <TextView
-                android:id="@+id/txt_estado"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textAlignment="center"
-                android:text="Estado"
-                android:textColor="@color/black"
-                android:textSize="20sp" />
+                android:layout_height="150dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/txt_estado"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Estado"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/txt_genero"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Genero"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+            </LinearLayout>
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="150dp"
-            android:layout_height="100dp"
-            android:layout_marginBottom="20dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:background="@color/white"
-            android:orientation="vertical">
-
-
-            <TextView
-                android:id="@+id/txt_genero"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textAlignment="center"
-                android:text="Genero"
-                android:textColor="@color/black"
-                android:textSize="20sp" />
-        </LinearLayout>
 
     </LinearLayout>
 

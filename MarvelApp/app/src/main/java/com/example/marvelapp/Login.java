@@ -26,7 +26,7 @@ import java.io.UnsupportedEncodingException;
 import java.util.HashMap;
 
 public class Login extends AppCompatActivity {
-    Button btnLogin;
+    Button btnLogin,gotoregister;
 
     EditText edtUser,edtPassword;
 
@@ -42,6 +42,7 @@ public class Login extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
         btnLogin =findViewById(R.id.btnLogin);
+        gotoregister =findViewById(R.id.gotoregister);
         edtUser =findViewById(R.id.edtUser);
         edtPassword =findViewById(R.id.edtPassword);
 
@@ -56,6 +57,14 @@ public class Login extends AppCompatActivity {
             finish();
         }
 
+        gotoregister.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(Login.this, Register.class);
+                startActivity(i);
+                finish();
+            }
+        });
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
