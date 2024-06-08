@@ -51,7 +51,7 @@ public class Login extends AppCompatActivity {
         dato= getApplicationContext().getSharedPreferences(dataUser,modo_private).getString("usuario","0");
 
         if(!dato.equalsIgnoreCase("0")){
-            Intent intent = new Intent(Login.this,MainActivity.class);
+            Intent intent = new Intent(Login.this,Inicio.class);
             startActivity(intent);
             finish();
         }

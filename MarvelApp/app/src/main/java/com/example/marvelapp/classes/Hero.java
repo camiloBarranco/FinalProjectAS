@@ -1,28 +1,35 @@
 package com.example.marvelapp.classes;
 
+import android.os.Parcelable;
+
 import org.json.JSONArray;
 
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Hero implements Serializable {
+public class Hero implements Serializable{
     private String name, description,image,extension,modified;
-    private JSONArray ListaComics ;
-    private  JSONArray ListaSeries ;
-    private JSONArray ListaStories ;
+    private int id;
 
-    public Hero(String name, String description, String image,String extension,String modified,
-                JSONArray listaComics,JSONArray listaSeries, JSONArray listaStories) {
+
+    public Hero(int id,String name, String description, String image,String extension,String modified) {
+        this.id = id;
         this.name = name;
         this.description = description;
         this.image = image;
         this.extension = extension;
         this.modified = modified;
 
-        ListaComics = listaComics;
-        ListaSeries = listaSeries;
-        ListaStories = listaStories;
+
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getName() {

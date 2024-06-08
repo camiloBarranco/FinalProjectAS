@@ -3,12 +3,43 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
     tools:context=".Comics_fragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_marginTop="60dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/black"/>
+        <Spinner
+            android:id="@+id/spn_comics"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imgV1"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="30dp"
+            android:padding="5dp" />
+        
+        <Button
+            android:id="@+id/btn_adquirir"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp"
+            android:text="Adquirir"/>
+    </LinearLayout>
+       
+
+
 
 </FrameLayout>
