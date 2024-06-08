@@ -75,7 +75,7 @@ public class HeroAdapter extends RecyclerView.Adapter<HeroAdapter.ViewHolder>{
         public ViewHolder(@NonNull View itemView, HeroAdapter.OnItemClickListener listener) {
             super(itemView);
             txt_hero = itemView.findViewById(R.id.txt_hero);
-            txt_descripcion = itemView.findViewById(R.id.txt_descripcion);
+            //txt_descripcion = itemView.findViewById(R.id.txt_descripcion);
             txt_modified = itemView.findViewById(R.id.txt_modified);
             img_hero = itemView.findViewById(R.id.img_hero);
             this.listener = listener;
@@ -83,7 +83,7 @@ public class HeroAdapter extends RecyclerView.Adapter<HeroAdapter.ViewHolder>{
 
         public void bind(Hero dato){
             txt_hero.setText(dato.getName());
-            txt_descripcion.setText(dato.getDescription());
+            //txt_descripcion.setText(dato.getDescription());
             txt_modified.setText(dato.getModified());
 
             String imagenF= dato.getImage().trim();

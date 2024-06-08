@@ -5,7 +5,10 @@ import android.os.Parcelable;
 import org.json.JSONArray;
 
 import java.io.Serializable;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 public class Hero implements Serializable{
@@ -65,7 +68,25 @@ public class Hero implements Serializable{
     }
 
     public String getModified() {
-        return modified;
+        String fechaFormateada ="";
+        SimpleDateFormat formatoFechaEntrada = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ssZ");
+        // Parsear el String a Date
+        try {
+            // Parsear el String a Date
+            Date fechaDate = formatoFechaEntrada.parse(modified);
+
+            // Formateador para convertir Date a String con el formato "dd-MM-yyyy"
+            SimpleDateFormat formatoFechaSalida = new SimpleDateFormat("dd-MM-yyyy");
+
+            // Convertir Date a String con el nuevo formato
+            fechaFormateada = formatoFechaSalida.format(fechaDate);
+
+            // Imprimir la fecha formateada
+
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+        return fechaFormateada;
     }
 
     public void setModified(String modified) {
